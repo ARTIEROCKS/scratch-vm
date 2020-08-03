@@ -343,10 +343,10 @@ class Blocks {
             });
             break;
         case 'dragOutside':
-            this.runtime.emitBlockDragUpdate(e.isOutside);
+            this.runtime.emitBlockDragUpdate(this._blocks, e.isOutside);
             break;
         case 'endDrag':
-            this.runtime.emitBlockDragUpdate(false /* areBlocksOverGui */);
+            this.runtime.emitBlockDragUpdate(this._blocks, false);
 
             // Drag blocks onto another sprite
             if (e.isOutside) {

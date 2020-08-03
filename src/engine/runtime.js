@@ -2251,10 +2251,11 @@ class Runtime extends EventEmitter {
 
     /**
      * Emit whether blocks are being dragged over gui
+     * @param {Array.<object>} blocks The set of blocks dragged to the GUI
      * @param {boolean} areBlocksOverGui True if blocks are dragged out of blocks workspace, false otherwise
      */
-    emitBlockDragUpdate (areBlocksOverGui) {
-        this.emit(Runtime.BLOCK_DRAG_UPDATE, areBlocksOverGui);
+    emitBlockDragUpdate (blocks, areBlocksOverGui) {
+        this.emit(Runtime.BLOCK_DRAG_UPDATE, blocks, areBlocksOverGui);
     }
 
     /**
