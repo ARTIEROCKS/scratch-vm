@@ -331,6 +331,7 @@ class Blocks {
                 name: e.name,
                 value: e.newValue
             });
+            this.runtime.emitBlockChanged(this._blocks, e.blockId);
             break;
         case 'move':
             this.moveBlock({

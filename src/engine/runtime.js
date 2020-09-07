@@ -709,6 +709,14 @@ class Runtime extends EventEmitter {
         return 300;
     }
 
+    /**
+     * Event name for reporting that a block has been changed
+     * @const {string}
+     */
+    static get BLOCK_CHANGED(){
+        return 'BLOCK_CHANGED'
+    }
+
     // -----------------------------------------------------------------------------
     // -----------------------------------------------------------------------------
 
@@ -2265,6 +2273,15 @@ class Runtime extends EventEmitter {
      */
     emitBlockEndDrag (blocks, topBlockId) {
         this.emit(Runtime.BLOCK_DRAG_END, blocks, topBlockId);
+    }
+
+    /**
+     * Emit whether a block is being changed
+     * @param {Array.<object>} blocks The set of blocks dragged to the GUI
+     * @param {string} blockId The block id that have been changed
+     */
+    emitBlockChanged (blocks, blockId) {
+        this.emit(Runtime.BLOCK_CHANGED, blocks, blockId);
     }
 
     /**
