@@ -85,5 +85,8 @@
     "webpack": "4.46.0",
     "webpack-cli": "3.1.0",
     "webpack-dev-server": "3.11.2"
+  },
+  "publishConfig": {
+    "registry": "http://nexus.ai-mind.com:8081/nexus/repository/npm-internal/"
   }
 }
