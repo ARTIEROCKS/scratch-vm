@@ -1,13 +1,13 @@
 {
-  "name": "scratch-vm",
+  "name": "artie-scratch-vm",
   "version": "0.2.3-artie",
-  "description": "Virtual Machine for Scratch 3.0",
+  "description": "Virtual Machine for Scratch 3.0 for ARTIE implementation",
   "author": "Massachusetts Institute of Technology",
   "license": "BSD-3-Clause",
-  "homepage": "https://github.com/LLK/scratch-vm#readme",
+  "homepage": "https://github.com/ARTIEROCKS/scratch-vm.git#readme",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/LLK/scratch-vm.git"
+    "url": "git+ssh://github.com/ARTIEROCKS/scratch-vm.git"
   },
   "main": "./dist/node/scratch-vm.js",
   "browser": "./src/index.js",
@@ -85,8 +85,5 @@
     "webpack": "4.46.0",
     "webpack-cli": "3.1.0",
     "webpack-dev-server": "3.11.2"
-  },
-  "publishConfig": {
-    "registry": "http://nexus.ai-mind.com:8081/nexus/repository/npm-internal/"
   }
 }
