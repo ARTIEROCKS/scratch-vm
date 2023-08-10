@@ -1,13 +1,13 @@
 {
-  "name": "scratch-vm",
+  "name": "artie-scratch-vm",
   "version": "1.6.1",
-  "description": "Virtual Machine for Scratch 3.0",
+  "description": "Virtual Machine for Scratch 3.0 for ARTIE implementation",
   "author": "Massachusetts Institute of Technology",
   "license": "BSD-3-Clause",
-  "homepage": "https://github.com/LLK/scratch-vm#readme",
+  "homepage": "https://github.com/ARTIEROCKS/scratch-vm#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/LLK/scratch-vm.git",
+    "url": "https://github.com/ARTIEROCKS/scratch-vm.git",
     "sha": "fb02256ea381df5d0a9bf779caa6a2d3e5320e01"
   },
   "main": "./dist/node/scratch-vm.js",
